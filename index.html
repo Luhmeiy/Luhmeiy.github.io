@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title>Luhmeiy</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!-- JavaScript -->
+    <script defer src="scripts/script.js"></script>
 </head>
 <body>
     <!-- Top Container -->
@@ -22,58 +26,70 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
         <div>
             <h1><span class="emphasis-white">I'm</span> Medeir<span id="OS">OS</span></h1>
             <h3 id="subtitle">a writer turned programmer.</h3>
         </div>
         <a href="#about" id="upndown"><i class="fa-solid fa-arrow-down" onclick=""></i></a>
     </div>
+
     <!-- Middle Container -->
     <div class="middle-container">
+
         <!-- About -->
         <div id="about">
             <h2>About Me</h2>
             <img id="personal-img" src="images/photo.jpg" alt="personal img">
             <h2>"Hello there." - Obi-Wan Kenobi</h2>
-            <p class="intro">My name is Luiz Henrique Medeiros and I'm a <span class="emphasis">web developer, web designer</span> and a <span class="emphasis-white">very lazy</span> <span class="emphasis">writer.</span> And yes, I'm a Star Wars fan.</p>
+            <p class="intro">My name is Luiz Henrique Medeiros and I'm a <span class="emphasis">web developer, web designer</span> and a <span class="emphasis-white">not so active</span> <span class="emphasis">writer.</span> And yes, I'm a Star Wars fan.</p>
             <p class="intro">I'm constantly on the looks for a <span class="emphasis-white">new and exciting technology</span> to test out. I also <span class="emphasis">love to work on small, <span class="emphasis-white">but interesting,</span> projects.</span></p>
         </div>
         <hr>
+
         <!-- Loved -->
         <div id="love">
             <h2>Stuff that I Love</h2>
             <div class="skill-row">
                 <img class="left-img" src="images/code.png" alt="code img">
                 <h3>Coding</h3>
-                <p>Coding has been <span class="emphasis">my passion</span> since I discovered it around <span class="emphasis">2017.</span> Since then <span class="emphasis">I have tried a little bit of everything</span> and now I can proudly say that <span class="emphasis-white">I'm able to code in HTML, CSS, JS and Python</span> and develop with frameworks such as Bootstrap and JQuery.</p>
+                <p>Coding has been <span class="emphasis">my passion</span> since I discovered it around <span class="emphasis">2017.</span> Since then <span class="emphasis">I have tried a little bit of everything</span> and now I can proudly say that <span class="emphasis-white">I'm able to code in HTML, SCSS, JS and Python</span> and develop with frameworks such as Bootstrap and JQuery. I'm also learning Node and MongoDB.</p>
             </div>
+
             <div class="skill-row">
                 <img class="right-img" src="images/books.png" alt="book img">
                 <h3>Writing</h3>
-                <p>My journey with writing <span class="emphasis">started really soon,</span> when I was <span class="emphasis">about 8 years old.</span> Back then I wrote <span class="emphasis">short stories</span> and tried drawing <span class="emphasis">bad scripted comics.</span> Now, <span class="emphasis">more than ten years later,</span> <span class="emphasis-white">I'm constantly fighting myself to work on only a project at a time.</span></p>
+                <p>My journey with writing <span class="emphasis">started really soon,</span> when I was <span class="emphasis">about 8 years old.</span> Back then I wrote <span class="emphasis">short stories</span> and tried drawing <span class="emphasis">bad scripted comics.</span> Now, <span class="emphasis">more than ten years later,</span> <span class="emphasis-white">I'm constantly fighting myself to work on only a single project at a time.</span></p>
                 <p><span class="emphasis">In 2020,</span> I published my first book <span class="emphasis-white">"O Brilho",</span> a book about a boy who finds the diary of a missing teenager that could, in thesis, prove that the town's most famous myth is actually real.</p>
             </div>
+
             <div class="skill-row">
                 <img class="left-img" src="images/party.png" alt="book img">
                 <h3>Silly Things</h3>
                 <p><span class="emphasis-white">To be honest,</span> <span class="emphasis">who doesn't?</span> I love to work on mini projects just to make my friends laugh, ranging from a <span class="emphasis">code made only to infuriate the user</span> to a MCU style <span class="emphasis">universe composed of super heroes with stupid powers.</span></p>
             </div>
         </div>
-        <hr style="clear: right;">
+        <hr>
+
         <!-- Contact -->
         <div id="contact">
             <h2>Get In Touch!</h2>
             <h3>Send me a nice message :)</h3>
-            <a class="btn" href="mailto:name@email.com">Contact Me</a>
+
+            <div class="copy-container">
+                <input type="text" readonly id="email">
+                <span id="tooltip">Click to copy</span>
+            </div>
         </div>
     </div>
+
     <!-- Bottom Container -->
     <div class="bottom-container">
-        <a class="footer-link" href="https://github.com/LuizHMedeirosS">GitHub</a>
-        <a class="footer-link" href="https://www.linkedin.com/in/luiz-henrique-medeiros-dos-santos-5488b11bb/">LinkedIn</a>
-        <a class="footer-link" href="https://www.instagram.com/luhmeiy/">Instagram</a>
+        <a class="footer-link" href="https://github.com/Luhmeiy" target="_blank">GitHub</a>
+        <a class="footer-link" href="https://www.linkedin.com/in/luhmeiy/" target="_blank">LinkedIn</a>
+        <a class="footer-link" href="https://www.instagram.com/luhmeiy/" target="_blank">Instagram</a>
         <p id="copyright">© 2022 Luiz Henrique Medeiros.</p>
-        <p>Icons made by FreePik from <a href="https://www.flaticon.com">www.flaticon.com</a>.</p>
+        <p>Icons made by FreePik from <a href="https://www.flaticon.com" target="_blank">www.flaticon.com</a>.</p>
     </div>
 </body>
 </html>
